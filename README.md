@@ -1,1 +1,1 @@
-# POS-Sistem
+# POS-System
