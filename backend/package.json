@@ -1,37 +1,30 @@
 {
-  "name": "Post Backend",
+  "name": "backend",
+  "private": true,
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Strapi application",
   "scripts": {
-    "dev": "ts-node-dev src/app.ts",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/cors": "^2.8.13",
-    "@types/express": "^4.17.1",
-    "@types/mongoose": "^5.11.97",
-    "@types/morgan": "^1.9.4",
-    "@types/node": "^18.13.0",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.8.4",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^4.9.5"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.17.1",
-    "mongoose": "^6.9.1",
-    "morgan": "^1.10.0"
-  }
+    "@strapi/strapi": "4.14.4",
+    "@strapi/plugin-users-permissions": "4.14.4",
+    "@strapi/plugin-i18n": "4.14.4",
+    "better-sqlite3": "8.6.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "80923f1d-a4d5-4a43-9527-8ac17dd5e0e7"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
